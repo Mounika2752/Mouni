@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		int n,s=0,m=1,r;
+		int result;
+		System.out.println("enter a number");
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		while(n!=0)
+		{
+			r=n%10;
+			n=n/10;
+			m=m*r;
+			s=s+r;
+		}
+		result=m-s;
+		System.out.println(result);
+	}
+}
+
+
+
+
+OUTPUT:
+enter a number
+4421
+21
+
