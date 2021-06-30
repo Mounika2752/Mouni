@@ -1,0 +1,38 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+	int n ,x,y;
+	int k, r,i=1;
+	
+	System.out.println("enter a number");
+	Scanner s=new Scanner(System.in);
+	n=s.nextInt();
+	System.out.println("enter a number to replace with another number");	
+	x=s.nextInt();
+	y=s.nextInt();
+	k=n;
+	while(n!=0)
+	{
+		r=n%10;
+		n=n/10;
+		if(r==x)
+		{
+			k=(y-x)*i+k;
+		}
+		i=i*10;
+	}
+	System.out.println(k);
+	}
+}
+
+
+
+
+
+OUTPUT:
+enter a number
+16719
+enter a number to replace with another number
+1 8
+86789
+
