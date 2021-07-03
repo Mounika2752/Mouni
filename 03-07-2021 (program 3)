@@ -1,0 +1,29 @@
+import java.util.*;
+class program3
+{
+	public static void main(String args[])
+	{
+		System.out.println("enter a number");
+		int n,pow,r=0;
+		Scanner s=new Scanner(System.in);
+		n=s.nextInt();
+		pow=n*n;
+		r=pow%100;
+		if(n==r)
+		System.out.println("automorphic");
+		else
+		System.out.println("not automorphic");
+}
+}
+
+
+
+
+
+
+
+OUTPUT:
+	enter a number
+25
+automorphic
+
