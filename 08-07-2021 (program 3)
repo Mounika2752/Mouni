@@ -1,0 +1,53 @@
+import java.util.*;
+class Program3
+{
+	public static void main(String args[])
+	{
+		System.out.print("enter row size");
+		int i,sum=0,j,n=0,size;
+		Scanner s=new Scanner(System.in);
+		size=s.nextInt();
+		int a[]=new int[size];
+		System.out.print("enter array elements");
+		for(i=0;i<size;i++)
+		{
+			a[i]=s.nextInt();
+		}
+		
+		for(i=0;i<size;i++)
+		{
+			sum=(sum*10)+a[i];
+		}
+		sum=sum+1;
+		if(sum==Math.pow(10,size))
+		{
+			n=size+1;
+		}
+		else
+		{
+			n=size;
+		}
+		int b[] = new int[n];
+		for(i=n-1;i>=0;i--)
+		{
+			b[i]=sum%10;
+			sum=sum/10;
+		}
+		for(i=0;i<n;i++)
+		{
+			System.out.print(b[i]);
+		}
+	}
+}
+
+
+
+
+
+
+
+OUTPUT:
+enter row size2
+enter array elements9 9
+100
+
