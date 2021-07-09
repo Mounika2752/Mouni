@@ -1,0 +1,40 @@
+import java.util.*; 
+class program1
+ { 
+public static void main(String args[]) 
+{ 
+String str; 
+Scanner sc=new Scanner(System.in); System.out.print("Enter string:");
+ str=sc.next(); 
+int u=0,l=0,d=0,s=0; 
+char ch[]=str.toCharArray();
+ for(int i=0;i<ch.length;i++)
+ {
+ if(Character.isUpperCase(ch[i])) u++; else if(Character.isLowerCase(ch[i])) l++; else if(Character.isDigit(ch[i])) d++; 
+ else s++; 
+} 
+if(u==l&&l==d&&d==s)
+{
+	System.out.println("yes");
+}
+else
+System.out.print("no");
+
+
+ }
+ }
+
+
+
+
+
+
+OUTPUT:
+Enter string:myST@&54
+yes
+
+OUTPUT 2:
+Enter string:myMY@&3
+no
+
+
