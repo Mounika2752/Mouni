@@ -1,0 +1,26 @@
+import java.util.*;
+class program1
+ {
+	public static void main(String[] args)
+	 {
+		String st,st1;
+		Scanner s=new Scanner(System.in);
+		System.out.print("enter a string:");
+		st=s.next();
+		int n=st.length();
+		for(int i=n-1;i>=0;i--)
+		{
+			System.out.print(st.charAt(i));
+		}	
+	}
+}
+
+
+
+
+
+OUTPUT:
+enter a string:hello
+olleh
+
+
