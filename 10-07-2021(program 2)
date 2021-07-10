@@ -1,0 +1,38 @@
+import java.util.*;
+class program2
+ {
+	public static void main(String[] args)
+	 {
+		String st,st1;
+		int sumeven=0,sumodd=0;
+		Scanner s=new Scanner(System.in);
+		System.out.print("enter a string:");
+		st=s.next();
+		int n=st.length();
+		char ch[]= st.toCharArray();
+		for(int i=0;i<n;i++)
+		{
+			if(ch[i]%2==0)
+			{
+			 sumeven=sumeven*10+(ch[i]-48);
+			}
+			else
+			 sumodd=sumodd*10+(ch[i]-48);
+			
+		}
+		System.out.print("even numbers are"+sumeven);
+
+		
+	    System.out.print("\n"+"odd numbers are"+sumodd);
+	 }
+}
+
+
+
+
+
+
+OUTPUT:
+enter a string:123456789
+even numbers are2468   
+ odd numbers are13579
