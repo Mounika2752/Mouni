@@ -1,0 +1,31 @@
+import java.util.*;
+import java.io.*;
+class splitting
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+String str;
+String ans="";
+System.out.println("enter str:");
+str=sc.nextLine();
+String ch[]=str.split("\\.");
+int n;
+n=ch.length;
+for(int i=n-1;i>=0;i--)
+{
+ans=ans+ch[i]+".";
+}
+System.out.println(ans);
+}
+}
+
+
+
+
+
+OUTPUT:
+enter str:
+sun.raises.in.the.east
+east.the.in.raises.sun.
+
