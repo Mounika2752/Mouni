@@ -1,0 +1,61 @@
+import java.util.*;
+import java.lang.*;
+class Main {
+       static void Count(StringBuilder sb,StringBuilder out)
+       {
+       	Scanner s=new Scanner(System.in);
+		
+		int count = 1;
+		for (int i = 0; i < sb.length()-1; i++)
+		{
+			if(sb.charAt(i) == sb.charAt(i + 1))
+			{
+				count++;
+			}
+			else
+			{
+				out = out.append(sb.charAt(i));
+				if (count != 1)
+				{
+					out = out.append( (char)(count +'0'));
+					count = 1;
+				}
+			}
+		}
+		if ((sb.charAt(sb.length()-2) == sb.charAt(sb.length()-1)) &&(sb.charAt(sb.length()-2) == sb.charAt(sb.length()-3)))
+		{
+			count++;
+			out.setCharAt(out.length()-1, (char)(count +'0'));	
+			}		
+		else if (sb.charAt(sb.length()-2) == sb.charAt(sb.length()-1))
+		{
+			out = out.append(sb.charAt(sb.length()-1));
+			out = out.append('2');
+		}
+		else
+		{
+			out = out.append(sb.charAt(sb.length()-1));
+		}
+		System.out.print(out);
+	
+}
+		public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("enter a string:");
+		StringBuilder sb= new StringBuilder(sc.next());
+		StringBuilder out = new StringBuilder();
+		System.out.print("The compressed string is:");
+		Count(sb,out);
+		}
+}
+
+
+
+
+
+
+
+OUTPUT:
+enter a string:aaabbeedff
+The compressed string is:a3b2e2df2
