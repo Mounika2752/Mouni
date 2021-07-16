@@ -1,0 +1,56 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		ArrayList<Integer>x=new ArrayList<Integer>();
+		System.out.println("enter no.of elements to be printed");
+		int n=s.nextInt();
+		for(int i=0;i<n;i++)
+		{
+			x.add(s.nextInt());
+		}
+		System.out.println("enter element which has to be replaced");
+		int ele=s.nextInt();
+		if (x.contains(ele))
+		{
+			System.out.println("enter element to be replced");
+		int replaceno=s.nextInt();
+	while(x.contains(ele))
+	{
+		x.set(x.indexOf(ele),replaceno);
+	}
+		System.out.println(x);
+		
+		}
+		else
+		{
+		System.out.print("false");
+		}
+	}
+}
+
+
+
+
+
+OUTPUT:
+enter no.of elements to be printed
+5
+10 20 30 40 50
+enter element which has to be replaced
+10
+enter element to be replced
+99
+[99, 20, 30, 40, 50]
+
+OUTPUT1:
+enter no.of elements to be printed
+5
+enter list of elements:10 10 20 30 10
+enter element which has to be replaced
+10
+enter element to be replced
+99
+[99, 99, 20, 30, 99]
+
+
