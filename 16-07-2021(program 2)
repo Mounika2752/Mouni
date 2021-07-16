@@ -1,0 +1,42 @@
+import java.util.*;
+class Frames2
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+LinkedList<Integer> x = new LinkedList<Integer>();
+int n;
+int element;
+System.out.print("enter number of elements to be printed in a linked list:");
+n=sc.nextInt();
+System.out.print("enter element to delete:");
+element=sc.nextInt();
+int i;
+System.out.print("enter elements are:");
+for(i=0;i<n;i++)
+{
+x.add(sc.nextInt());
+}
+
+if(x.contains(element))
+{
+x.remove(x.indexOf(element));
+System.out.print("after deletion list is:");
+System.out.println(x);
+}
+else
+{
+System.out.print("Element Not found");
+}
+}
+}
+
+
+
+
+
+OUTPUT:
+enter number of elements to be printed in a linked list:5
+enter element to delete:10
+enter elements are:100 97 10 50 65
+after deletion list is:[100, 97, 50, 65]
