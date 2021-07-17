@@ -1,0 +1,42 @@
+
+import java.util.*;
+class Vectar
+{
+public static void main(String args[])throws Exception
+{
+Scanner sc=new Scanner(System.in);
+Vector v=new Vector();
+String str;
+System.out.println("enter  to search");
+str=sc.next();
+v.add(101);
+v.add("Rama");
+v.add(6.58);
+v.add(102);
+v.add("Gita");
+v.add(8.98);
+System.out.println("1."+v);
+v.remove("Gita");
+System.out.println("2."+v);
+v.remove(2);
+v.add(2,9.17);
+System.out.println("3."+v);
+if(v.contains(str))
+System.out.println("4.true");
+else
+System.out.println("4.false");
+}
+}
+
+
+
+
+OUTPUT:
+enter  to search
+Gita
+1.[101, Rama, 6.58, 102, Gita, 8.98]
+2.[101, Rama, 6.58, 102, 8.98]
+3.[101, Rama, 9.17, 102, 8.98]
+4.false
+
+
