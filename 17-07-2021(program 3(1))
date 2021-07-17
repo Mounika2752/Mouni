@@ -1,0 +1,181 @@
+import java.util.*;
+class linkedlist
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+LinkedList<Integer> x=new LinkedList<Integer>();
+int n,ch,p;
+do
+{
+System.out.println("1.BeginInsert \n2.EndInsert\n 3.position insert\n4.Begindelete\n5.Enddelete\n6.postiondelete\n7.display\n8.exit\nEnter your Choice:");
+ch=sc.nextInt();
+switch(ch)
+{
+case 1: System.out.println("Enter element to insert");
+n=sc.nextInt();
+x.addFirst(n);
+System.out.println("ELEMENT INSERTED");
+break;
+case 2: System.out.println("Enter element to insert");
+n=sc.nextInt();
+x.addLast(n);
+System.out.println("ELEMENT INSERTED");
+break;
+case 3:System.out.println("enter position value where element to be insert");
+p=sc.nextInt();
+System.out.println("enter element to insert");
+n=sc.nextInt();
+x.add(p,n);
+System.out.println("ELEMENT INSERTED ");
+case 4:x.removeFirst();
+System.out.println("ELEMENTED DELETED");
+break;
+case 5:x.removeLast();
+System.out.println("ELEMENTED DELETED");
+break;
+case 6:System.out.println("enter position value where element to be delete");
+p=sc.nextInt();
+x.remove(p-1);
+System.out.println("ELEMENTED DELETED");
+break;
+case 7: System.out.println(x);
+break;
+case 8:System.exit(0);
+default: System.out.println("Invalid Choice");
+}
+}while(ch<9);
+}
+}
+
+
+
+
+OUTPUT:
+1.BeginInsert
+2.EndInsert
+ 3.position insert
+4.Begindelete
+5.Enddelete
+6.postiondelete
+7.display
+8.exit
+Enter your Choice:
+2
+Enter element to insert
+98
+ELEMENT INSERTED
+1.BeginInsert
+2.EndInsert
+ 3.position insert
+4.Begindelete
+5.Enddelete
+6.postiondelete
+7.display
+8.exit
+Enter your Choice:
+1
+Enter element to insert
+90
+ELEMENT INSERTED
+1.BeginInsert
+2.EndInsert
+ 3.position insert
+4.Begindelete
+5.Enddelete
+6.postiondelete
+7.display
+8.exit
+Enter your Choice:
+3
+enter position value where element to be insert
+1
+enter element to insert
+56
+ELEMENT INSERTED
+ELEMENTED DELETED
+1.BeginInsert
+2.EndInsert
+ 3.position insert
+4.Begindelete
+5.Enddelete
+6.postiondelete
+7.display
+8.exit
+Enter your Choice:
+2
+Enter element to insert
+09
+ELEMENT INSERTED
+1.BeginInsert
+2.EndInsert
+ 3.position insert
+4.Begindelete
+5.Enddelete
+6.postiondelete
+7.display
+8.exit
+Enter your Choice:
+1
+Enter element to insert
+87
+ELEMENT INSERTED
+1.BeginInsert
+2.EndInsert
+ 3.position insert
+4.Begindelete
+5.Enddelete
+6.postiondelete
+7.display
+8.exit
+Enter your Choice:
+4
+ELEMENTED DELETED
+1.BeginInsert
+2.EndInsert
+ 3.position insert
+4.Begindelete
+5.Enddelete
+6.postiondelete
+7.display
+8.exit
+Enter your Choice:
+5
+ELEMENTED DELETED
+1.BeginInsert
+2.EndInsert
+ 3.position insert
+4.Begindelete
+5.Enddelete
+6.postiondelete
+7.display
+8.exit
+Enter your Choice:
+6
+enter position value where element to be delete
+2
+ELEMENTED DELETED
+1.BeginInsert
+2.EndInsert
+ 3.position insert
+4.Begindelete
+5.Enddelete
+6.postiondelete
+7.display
+8.exit
+Enter your Choice:
+7
+[56]
+1.BeginInsert
+2.EndInsert
+ 3.position insert
+4.Begindelete
+5.Enddelete
+6.postiondelete
+7.display
+8.exit
+Enter your Choice:
+9
+Invalid Choice
+
+
