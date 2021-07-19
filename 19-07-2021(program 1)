@@ -1,0 +1,36 @@
+import java.util.*;
+class program1
+{
+	public static void main(String args[])
+	{
+		HashMap<Integer,String>x=new HashMap<Integer,String>();
+		Scanner sc=new Scanner(System.in);
+		int n; 
+		int key;
+		String value;
+		System.out.println("enter numbers elements into hashmap");
+		n=sc.nextInt();
+		for(int i=0;i<n;i++)
+		{
+			key=sc.nextInt();
+			value=sc.next();
+			x.put(key,value);
+		}
+		TreeMap<Integer,String>t=new TreeMap<Integer,String>(x);
+	
+		System.out.println(t);
+	}
+}
+
+
+
+
+
+
+OUTPUT:
+enter numbers elements into hashmap
+3
+5 jhon
+1 sam
+7 kim
+{1=sam, 5=jhon, 7=kim}
